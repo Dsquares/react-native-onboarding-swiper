@@ -204,7 +204,6 @@ class Onboarding extends Component {
           {...flatlistProps}
         />
         {showPagination && (
-          <SafeAreaView style={bottomBarHighlight ? styles.overlay : {}}>
             <Pagination
               isLight={isLight}
               bottomBarHeight={bottomBarHeight}
@@ -226,7 +225,6 @@ class Onboarding extends Component {
               NextButtonComponent={NextButtonComponent}
               DotComponent={DotComponent}
             />
-          </SafeAreaView>
         )}
       </Animated.View>
     );
